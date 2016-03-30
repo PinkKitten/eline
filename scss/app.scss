@@ -38,3 +38,49 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+@font-face {
+  font-family: 'ScpRomanRegular';
+  src: url('./fonts/source_code_pro_roman_regular.ttf')
+}
+body {
+  font-family: 'ScpRomanRegular', Fallback, 'Courier New';
+}
+#eline-bw {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/eline_bw.jpg");
+  background-size: cover;
+  background-position: center top;
+  padding: 10px;
+  .row {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+.info {
+  color: white;
+  display: inline-block;
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+  margin-bottom: 0px;
+  font-family: 'ScpRomanRegular', Fallback, 'Courier New';
+}
+.note_container {
+  position: fixed;
+  padding-right: 10px;
+  width: 100%;
+  bottom: 0;
+  .note_title {
+    color: white;
+    font-family: 'ScpRomanRegular', Fallback, 'Courier New';
+  }
+  .note_message {
+    height: 75px;
+  }
+  .note_button {
+    float: right;
+    font-family: 'ScpRomanRegular', Fallback, 'Courier New';
+    border-radius: 1px;
+  }
+}

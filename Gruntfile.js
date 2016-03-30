@@ -29,11 +29,18 @@ module.exports = function(grunt) {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       }
+    },
+
+    serve: {
+      options: {
+        port: 9000
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-serve')
 
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['build','watch']);
